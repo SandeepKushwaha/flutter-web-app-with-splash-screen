@@ -6,7 +6,12 @@ A simple Flutter application with following special features.
 
 ## Snapshots
    -- Mobile
+   ![1. Splash Screen](https://github.com/SandeepKushwaha/flutter-web-app-with-splash-screen/blob/master/snapshots/screenshot_mobile_1.jpg)
+   ![1. Main Screen](https://github.com/SandeepKushwaha/flutter-web-app-with-splash-screen/blob/master/snapshots/screenshot_mobile_2.jpg)
+   
    -- Web
+   ![1. Splash Screen](https://github.com/SandeepKushwaha/flutter-web-app-with-splash-screen/blob/master/snapshots/screenshot_web_1.jpg)
+   ![1. Main Screen](https://github.com/SandeepKushwaha/flutter-web-app-with-splash-screen/blob/master/snapshots/screenshot_web_2.jpg)
 
 ## Getting Started
 
