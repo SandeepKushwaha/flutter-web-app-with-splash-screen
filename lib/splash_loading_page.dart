@@ -31,8 +31,10 @@ class _MySplashLoadingPageState extends State<MySplashLoadingPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: _AnimatedLiquidCustomProgressIndicator(),
+    return Scaffold(
+      body: Center(
+        child: _AnimatedLiquidCustomProgressIndicator(),
+      ),
     );
   }
 
@@ -99,7 +101,7 @@ class _AnimatedLiquidCustomProgressIndicatorState
       child: LiquidCustomProgressIndicator(
         value: _animationController.value,
         direction: Axis.vertical,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.white,
         valueColor: AlwaysStoppedAnimation(Colors.blue),
         shapePath: _buildOvalPath(),
         center: Text(

@@ -15,6 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Web Demo',
+      theme: ThemeData.light().copyWith(
+        primaryColor: Colors.blue,
+      ),
       home: MySplashLoadingPage(),
     );
   }
@@ -35,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: kIsWeb ? Text(widget.title) : Text('Flutter App'),
-        leading: kIsWeb ? Icon(Icons.web) : Icon(Icons.devices),
+        leading: kIsWeb ? Icon(Icons.web) : Icon(Icons.smartphone),
         actions: [kIsWeb ? WebAppBarActions() : MobileAppBarActions()],
       ),
       body: Center(
@@ -131,9 +134,11 @@ class WebAppBarActions extends StatelessWidget {
         IconButton(
           icon: Icon(Icons.home),
           onPressed: () {},
+          tooltip: 'Home',
         ),
         IconButton(
           icon: Icon(Icons.info),
+          tooltip: 'About App',
           onPressed: () {
             showAboutDialog(
               context: context,
@@ -158,8 +163,20 @@ class MobileAppBarActions extends StatelessWidget {
     return Row(
       children: [
         IconButton(
-          icon: Icon(Icons.share),
-          onPressed: () {},
+          icon: Icon(Icons.info_outline),
+          tooltip: 'About App',
+          onPressed: () {
+            showAboutDialog(
+              context: context,
+              applicationVersion: '0.0.0+1',
+              applicationIcon: Container(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Icon(Icons.smartphone),
+                ),
+              ),
+            );
+          },
         ),
       ],
     );

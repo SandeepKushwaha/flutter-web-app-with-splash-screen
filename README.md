@@ -1,8 +1,12 @@
-# flutter_web_app
+## flutter_web_app
 
 A simple Flutter application with following special features.
    - Flutter Web Support
    - Splash Screen.
+
+## Snapshots
+   -- Mobile
+   -- Web
 
 ## Getting Started
 
